@@ -14,5 +14,10 @@ jobs:
     runs-on: ubunty-latest
 
     steps:
-      - name: 'Testing printing folder contents'
+      - name: 'Before'
+        run: ls 
+      
+      - uses: actions/checkout@v3
+
+      - name: 'After'
         run: ls
